@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>风暴手机联盟</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script src="js/userem.js"></script>
+
+	</head>
+
+	<body ontouchstart>
+		<header>
+			<div class="top">
+				<img src="img/logo.png" alt="logo" />
+				<span id="Nav">
+					<i class="iconfont show"><img src="img/Nav_menu.png"/></i>
+					<i style="display: none;" class="iconfont close"><img src="img/Nav_close.png"/></i>
+					<i class="iconfont home" style="display: none;"><img src="img/Nav_menu.png"/></i>
+				</span>
+
+				<div class="clearfix"></div>
+			</div>
+			<div id="total" class="content" style="display: none;">
+				<div class="nav">
+					<div class="login login1">登录</div>
+					<div class="login">注册</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="choose">
+					<div class="onebox" onclick="window.location.href = 'index.html'">
+						<a class="one active" href="index.html">首页</a>
+						<i class="iconfont">></i>
+					</div>
+				</div>
+				<div id="money" class="choose money">
+					<div class="onebox">
+						<a class="one" href="javascript:;">如何赚钱</a>
+						<i class="iconfont">></i>
+					</div>
+					<div class="money_content" style="display: none;">
+						<div>
+							<div class="money_box" onclick="window.location.href = 'makemoney_mendian.html'">
+								<a href="makemoney_mendian.html">门店/维修</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="money_box" onclick="window.location.href = 'makemoney_pifa.html'">
+								<a href="makemoney_pifa.html">批发/刷机</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div>
+							<div class="money_box" onclick="window.location.href = 'copartner.html'">
+								<a href="copartner.html">推广者</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div id="news" class="choose news">
+					<div class="onebox">
+						<a class="one" href="javascript:void(0)">风暴新闻</a>
+						<i class="iconfont">></i>
+					</div>
+					<div class="news_content" style="display: none;">
+						<div>
+							<div class="news_box" onclick="window.location.href = 'news.html'">
+								<a href="news.html">风暴新闻</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="news_box" onclick="window.location.href = 'notices.html'">
+								<a href="notices.html">风暴公告</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="choose">
+					<div class="onebox" onclick="window.location.href = 'map.html'">
+						<a class="one" href="map.html">会员分布</a>
+						<i class="iconfont">></i>
+					</div>
+				</div>
+				<div id="help" class="choose help">
+					<div class="onebox">
+						<a class="one" href="javascript:;">帮助中心</a>
+						<i class="iconfont">></i>
+					</div>
+					<div class="help_content" style="display: none;">
+						<div>
+							<div class="help_box" onclick="window.location.href = 'help_zhoushou.html'">
+								<a href="help_zhoushou.html">风暴装机助手</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="help_box" onclick="window.location.href = 'help_hezi.html'">
+								<a href="help_hezi.html">风暴装机盒子</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div>
+							<div class="help_box" onclick="window.location.href = 'help_tuiguang.html'">
+								<a href="help_tuiguang.html">风暴在线推广</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="choose">
+					<div class="onebox" onclick="window.location.href = 'about.html'">
+						<a class="one" href="about.html">关于风暴</a>
+						<i class="iconfont">></i>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="h_login" class="h_login" style="display: none;">
+				<div class="loginImg_box">
+					<img src="img/login_code.png" />
+				</div>
+				<div class="text">
+					<p>扫描二维码或搜索微信公众号：ytlemeng</p>
+					<p>关注即可加入，开始装机赚钱！</p>
+				</div>
+			</div>
+
+		</header>
+
+		<!--图片-->
+		<section class="section1">
+			<img style="width: 100%;" src="img/index_banner.png" alt="baner" />
+		</section>
+		<!--风暴手机联盟-->
+		<section class="section2">
+			<h2>风暴手机联盟</h2>
+			<h3>助您在移动互联网大潮中掘金</h3>
+			<div class="s2_iconbox">
+				<div class="box_box">
+					<div class="box tab active">
+						<img class="noactive" src="img/lianmeng_1.png" alt="" />
+						<p>我是合伙人</p>
+						<img class="drop" src="img/lianmeng_drop.png"/>
+
+					</div>
+					<div class="box">
+						<img class="noactive" src="img/lianmeng_4.png" alt="" />
+						<p>我是门店预装</p>
+						<img class="drop" src="img/lianmeng_drop.png"/>
+
+					</div>
+					<div class="box">
+						<img class="noactive" src="img/lianmeng_2.png" alt="" />
+						<p>我是批发商</p>
+						<img class="drop" src="img/lianmeng_drop.png"/>
+
+					</div>
+					<div class="box">
+						<img class="noactive" src="img/lianmeng_3.png" alt="" />
+						<p>我是刷机商</p>
+						<img class="drop" src="img/lianmeng_drop.png"/>
+
+					</div>
+					
+					<div class="clearfix"></div>
+				</div>
+
+				<div class="subbox">
+					<div class="sub active">
+						<i class="iconfont"></i>
+						<h5>方便的推广模式</h5>
+						<p>如果您善于推广、宣传或有某方面的独家资源，可方便的加入风暴推广系统获取收益。</p>
+						<i class="iconfont"></i>
+						<h5>软件安全放心</h5>
+						<p>软件经由风暴严格测试，绝无任何扣费等影响用户体验的行为，请放心推广。</p>
+						<i class="iconfont"></i>
+						<h5>流程简单快捷</h5>
+						<p>注册获取专属推广链接，引导潜在会员通过链接进行注册并推广，即可完成推广过程。</p>
+					</div>
+					<div class="sub">
+						<i></i>
+						<h5>产品丰富稳定可靠</h5>
+						<p>
+							海量官方正版软件100%无扣费，支持当前最火爆的手机游戏高分成，将您的客流量最大程度变现。
+						</p>
+						<i></i>
+						<h5>安装方便快捷全自动</h5>
+						<p>
+							使用风暴提供的电脑端装机助手即可全自动无人值守安装软件，方便快捷。
+						</p>
+						<i></i>
+						<h5>无门槛全免费加盟</h5>
+						<p>
+							无需加盟费即可加入风暴推广，安装量大的用户可使用独家研发的装机盒子效率更高。
+						</p>
+					</div>
+
+					<div class="sub">
+						<i></i>
+						<h5>产品丰富稳定可靠</h5>
+						<p>海量官方正版软件100%无扣费，支持当前最火爆的手机游戏高分成，将您的客流量最大程度变现。</p>
+						<i></i>
+						<h5>安装方便快捷全自动</h5>
+						<p> 使用风暴提供的电脑端装机助手即可全自动无人值守安装软件，方便快捷。</p>
+						<i></i>
+						<h5>高额回报</h5>
+						<p>每部手机最高可赚20元以上</p>
+					</div>
+					
+					<div class="sub">
+						<i></i>
+						<h5>方便的推广模式</h5>
+						<p>如果您善于推广、宣传或有某方面的独家资源，可方便的加入风暴推广系统获取收益。</p>
+						<i></i>
+						<h5>软件安全放心</h5>
+						<p>软件经由风暴严格测试，绝无任何扣费等影响用户体验的行为，请放心推广。</p>
+						<i></i>
+						<h5>流程简单快捷</h5>
+						<p>注册获取专属推广链接，引导潜在会员通过链接进行注册并推广，即可完成推广过程。</p>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<!-- 海量正版官方APP-->
+		<section class="section3">
+			<h2>海量正版官方APP</h2>
+			<div id="APP">
+				<div id="sofeware" class="btn active">手机软件</div>
+				<div id="game" class="btn">手机游戏</div>
+			</div>
+			<div class="box softwareBox">
+				<div class="img_box">
+					<img src="img/software1.png" alt="/" />
+					<p>UC浏览器 </p>
+					<p><span>2元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/software2.png" alt="/" />
+					<p>清理大师 </p>
+					<p><span>1.5元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/software3.png" alt="/" />
+					<p>酷我音乐 </p>
+					<p><span>1.5元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/software4.png" alt="/" />
+					<p>百度搜索 </p>
+					<p><span>2元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/software5.png" alt="/" />
+					<p>百度手机助手 </p>
+					<p><span>2元</span>/个</p>
+				</div>
+				<div class="img_box">
+					<img src="img/software6.png" alt="/" />
+					<p>应用宝</p>
+					<p><span>2元</span>/个</p>
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+
+			<div class="box gameBox">
+				<div class="img_box">
+					<img src="img/game1.png" alt="/" />
+					<p>皇室战争 </p>
+					<p><span>30%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game2.png" alt="/" />
+					<p>梦幻西游 </p>
+					<p><span>30%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game3.png" alt="/" />
+					<p>大话西游</p>
+					<p><span>30%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game4.png" alt="/" />
+					<p>问道</p>
+					<p><span>45%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game5.png" alt="/" />
+					<p>暗黑黎明 2</p>
+					<p><span>50%充值</span></p>
+				</div>
+				<div class="img_box">
+					<img src="img/game6.png" alt="/" />
+					<p>天子</p>
+					<p><span>50%充值</span></p>
+				</div>
+				<div class="clearfix"></div>
+
+			</div>
+
+		</section>
+
+		<!-- 我们的优势-->
+		<section class="section4">
+			<h2>我们的优势</h2>
+			<div class="line"></div>
+			<div class="s4_box">
+				<div class="ad_box ad_bottom">
+					<img src="img/advantage_1.png" alt="/" />
+					<div class="text">
+						<h5>强大的技术力量</h5>
+						<p>风暴拥有业内领先的技术团队，对平台系统拥有独特的技术优势。</p>
+					</div>
+				</div>
+				<div class="ad_box ad_bottom ad_left">
+					<img src="img/advantage_2.png" alt="/" />
+					<div class="text">
+						<h5>独创的多级代理制度</h5>
+						<p>独创的多级代理制度，最大化推广下线带来的奖励真正做到足不出户坐享其成！</p>
+					</div>
+				</div>
+				<div class="ad_box">
+					<img src="img/advantage_3.png" alt="/" />
+					<div class="text">
+						<h5>详细透明的数据统计</h5>
+						<p>数据统计系统公平、透明计算推广收入，会员可翔实监测；数据统计系统也为服务的优化、升级提供参考</p>
+					</div>
+				</div>
+				<div class="ad_box ad_left">
+					<img src="img/advantage_4.png" alt="/" />
+					<div class="text">
+						<h5>高额的收入回报</h5>
+						<p>风暴拥有全网最高的分成比例、最高的产品单价和最灵活的结算周期，将会员的收入最大化。</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</section>
+
+		<!--风暴收入排行榜-->
+		<section class="section5">
+			<h2>风暴收入排行榜</h2>
+			<div class="line"></div>
+			<div class="s5_box">
+				<div class="text">
+					<span class="num num_a">1</span>
+					<span class="name">bol****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">220817元</span>
+				</div>
+				<div class="text">
+					<span class="num num_a">2</span>
+					<span class="name">own****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">172592元</span>
+				</div>
+				<div class="text">
+					<span class="num num_a">3</span>
+					<span class="name">nim****</span>
+					<span class="city">[上海]</span>
+					<span class="money">170071元</span>
+				</div>
+				<div class="text">
+					<span class="num">4</span>
+					<span class="name">158****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">146330元</span>
+				</div>
+				<div class="text">
+					<span class="num">5</span>
+					<span class="name">li0****</span>
+					<span class="city">[北京]</span>
+					<span class="money">137612元</span>
+				</div>
+				<div class="text">
+					<span class="num">6</span>
+					<span class="name">lem****</span>
+					<span class="city">[深圳]</span>
+					<span class="money">107473元</span>
+				</div>
+			</div>
+		</section>
+
+		<!--合作伙伴-->
+		<section class="section6">
+			<h2>合作伙伴</h2>
+			<div class="s6_box">
+				<img src="img/sohu.png" />
+				<img src="img/tecent.png" />
+				<img src="img/migu.png" />
+				<img src="img/suning.png" />
+				<img src="img/jingdong.png" />
+				<img src="img/wangyi.png" />
+				
+			</div>
+		</section>
+
+		<!--底部-->
+		<footer>
+			<div class="left">
+				<img src="img/footer_code.png" alt="二维码" />
+				<p>微信公众号</p>
+			</div>
+			<div class="right">
+				<p class="phone">400-9977-768</p>
+				<p class="text">全国统一服务热线</p>
+				<p class="qq">
+					QQ：800033559
+				</p>
+			</div>
+			<div class="clearfix"></div>
+			<p class="address">
+				地址：山东省烟台市芝罘区电子商务创新港706室
+			</p>
+			<div class="line"></div>
+			<div class="copy_box">
+				<p class="copy">Copyright © 2011-2020 风暴网络 </p>
+				<p class="copy">All Rights Reserved. 浙ICP备14036245号</p>
+			</div>
+		</footer>
+
+	</body>
+	<script src="js/jquery-1.8.3.js" type="text/javascript" charset="utf-8"></script>
+
+	<!--导航-->
+	<script type="text/javascript">
+		var Nav = $('#Nav');
+		var icon_show = $('#Nav .show');
+		var icon_close = $('#Nav .close');
+		var icon_home = $('#Nav .home');
+		var total = $('#total');
+		var choose = $('.choose');
+		var money = $('#money .onebox');
+		var money_con = $('.money_content');
+		var news = $('#news .onebox');
+		var news_con = $('.news_content');
+		var help = $('#help .onebox');
+		var help_con = $('.help_content');
+		var help_two = $('#help .twobox');
+		var help_sub = $('#help .help_sub');
+		var login = $('#total .nav .login');
+		var login_con = $('#h_login');
+
+		help_two.attr('data-content', '>');
+		//右上角点击事件
+		Nav.click(function() {
+			//			debugger;
+			if(total.css('display') == 'block') {
+				total.hide();
+				icon_close.hide();
+				icon_home.hide();
+				icon_show.show();
+
+			} else {
+				total.show();
+				icon_show.hide();
+				icon_home.hide();
+				icon_close.show();
+			}
+		})
+
+		//点击导航改变active属性
+		choose.click(function() {
+			$(this).siblings().children('.onebox').children('.one').removeClass('active');
+			$(this).children('.onebox').children('.one').addClass('active')
+		})
+
+		//打开关闭如何赚钱
+		money.click(function() {
+				if(money_con.css('display') == 'block') {
+					money_con.hide();
+					$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+				} else {
+					money_con.show();
+					$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+
+				}
+			})
+			//打开关闭风暴新闻
+		news.click(function() {
+			if(news_con.css('display') == 'block') {
+				news_con.hide();
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				news_con.show();
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+
+			}
+		})
+
+		//帮助中心
+		help.click(function() {
+			if(help_con.css('display') == 'block') {
+				help_con.hide();
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				help_con.show();
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+			}
+		})
+
+		//登录注册
+		login.click(function() {
+			icon_close.hide();
+			icon_show.hide();
+			icon_home.show();
+			login_con.show();
+			icon_home.click(function() {
+				icon_close.hide();
+				icon_home.hide();
+				icon_show.show();
+				login_con.hide();
+				total.show();
+			})
+		})
+	</script>
+
+	<!--tab页-->
+	<script type="text/javascript">
+		$(function() {
+			$(".section2 .box_box .box").click(function() {
+				var index = $(this).index();
+				$(".section2 .box_box .box").removeClass("active");
+				$(this).addClass("active");
+				$(".section2 .subbox .sub").hide();
+				$(".section2 .subbox .sub").eq(index).show();
+			});
+
+			//			$('#sofeware').click(function(){
+			//				$(this).siblings().removeClass('active').end().addClass('active');
+			//			})
+
+			var app = $('#APP div');
+			var box = $('.section3 .box');
+			app.click(function() {
+				$(this).siblings().removeClass('active').end().addClass('active');
+				var m = $(this).index();
+				box.hide();
+				box.eq(m).show();
+
+			})
+
+		})
+	</script>
+
+</html>
