@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			header {
+				height: 2.5rem;
+				overflow: hidden;
+			}
+			
+			header i {
+				font-style: normal;
+			}
+			
+			header .top {
+				border-bottom: 0.025rem solid #dedede;
+			}
+			
+			header .top #Nav>i img {
+				width: 1rem;
+				height: 1rem;
+				overflow: hidden;
+			}
+			
+			header .top>img {
+				width: 6rem;
+				height: 1.5rem;
+				float: left;
+				padding: 0.5rem 0 0 0.5rem;
+			}
+			
+			header .top>p {
+				margin: 0;
+				float: left;
+				line-height: 2.5rem;
+				font-size: 0.9rem;
+				margin-left: 0.5rem;
+			}
+			
+			header span {
+				float: right;
+				line-height: 2.5rem;
+				margin-right: 1rem;
+			}
+			
+			header .content {
+				position: absolute;
+				width: 100%;
+				top: 2.5rem;
+				left: 0;
+				min-height: 100%;
+				background: #fff;
+				z-index: 999;
+			}
+			
+			header .content a {
+				color: #333;
+				text-decoration: none;
+			}
+			
+			header .content .choose {
+				position: relative;
+			}
+			
+			header .content .choose>i {
+				font-style: normal;
+				color: #b2b2b2;
+				float: right;
+				margin-right: 0.5rem;
+			}
+			/*header .content .choose .one:after{
+                content: '>';
+                position: absolute;
+                right: 0.5rem;
+            }*/
+			
+			header .content .nav .login {
+				font-size: 0.8rem;
+				float: left;
+				width: 50%;
+				height: 2rem;
+				background: #eee;
+				text-align: center;
+				line-height: 2rem;
+			}
+			
+			header .content .nav .login1 {
+				border-right: 0.05rem solid #dcdcdc;
+				box-sizing: border-box;
+			}
+			
+			header .content .choose {
+				font-size: 0.8rem;
+				padding-left: 0.5rem;
+				border-bottom: 0.05rem solid #dcdcdc;
+				line-height: 2rem;
+			}
+			
+			header .content .choose .one {
+				display: inline-block;
+				width: 90%;
+			}
+			
+			header .content .choose .money_content,
+			header .content .choose .news_content,
+			header .content .choose .help_content {
+				line-height: 2rem;
+			}
+			
+			header .content .choose .money_content .money_box,
+			header .content .choose .news_content .news_box,
+			header .content .choose .help_content .help_box {
+				font-size: 0.7rem;
+			}
+			
+			header .content .choose .money_content .money_box,
+			header .content .choose .news_content .news_box,
+			header .content .choose .help_content .help_box {
+				width: 50%;
+				float: left;
+			}
+			
+			
+			/*header .content .choose .help_content .two:after{
+                content:  attr(data-content);
+            }*/
+			
+			header .content .choose .active {
+				color: #f39502;
+			}
+			
+			header .h_login {
+				background: #fff;
+				position: absolute;
+				z-index: 999;
+				top: 2.5rem;
+				left: 0;
+				right: 0;
+				min-height: 100%;
+				text-align: center;
+				margin: 0 auto;
+			}
+			
+			header .h_login .text {
+				font-size: 0.8rem;
+				margin-top: 2.5rem;
+			}
+			
+			header .h_login .loginImg_box {
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 3.7rem;
+			}
+			
+			header .h_login .loginImg_box img {
+				width: 10rem;
+				height: 10rem;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="top">
+				<img src="img/logo.png" alt="logo" />
+				<span id="Nav">
+					<i class="iconfont show"><img src="img/Nav_menu.png"/></i>
+					<i style="display: none;" class="iconfont close"><img src="img/Nav_close.png"/></i>
+					<i class="iconfont home" style="display: none;"><img src="img/Nav_menu.png"/></i>
+				</span>
+
+				<div class="clearfix"></div>
+			</div>
+			<div id="total" class="content" style="display: none;">
+				<div class="nav">
+					<div class="login login1">登录</div>
+					<div class="login">注册</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="choose">
+					<div class="onebox" onclick="window.location.href = 'index.html'">
+						<a class="one" href="index.html">首页</a>
+						<i class="iconfont">></i>
+					</div>
+				</div>
+				<div id="money" class="choose money">
+					<div class="onebox">
+						<a class="one" href="javascript:;">如何赚钱</a>
+						<i class="iconfont">></i>
+					</div>
+					<div class="money_content" style="display: none;">
+						<div>
+							<div class="money_box" onclick="window.location.href = 'makemoney_mendian.html'">
+								<a href="makemoney_mendian.html">门店/维修</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="money_box" onclick="window.location.href = 'makemoney_pifa.html'">
+								<a href="makemoney_pifa.html">批发/刷机</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div>
+							<div class="money_box" onclick="window.location.href = 'copartner.html'">
+								<a href="copartner.html">推广者</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div id="news" class="choose news">
+					<div class="onebox">
+						<a class="one" href="javascript:void(0)">风暴新闻</a>
+						<i class="iconfont">></i>
+					</div>
+					<div class="news_content" style="display: none;">
+						<div>
+							<div class="news_box" onclick="window.location.href = 'news.html'">
+								<a href="news.html">风暴新闻</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="news_box" onclick="window.location.href = 'notices.html'">
+								<a href="notices.html">风暴公告</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="choose">
+					<div class="onebox" onclick="window.location.href = 'map.html'">
+						<a class="one" href="map.html">会员分布</a>
+						<i class="iconfont">></i>
+					</div>
+				</div>
+				<div id="help" class="choose help">
+					<div class="onebox">
+						<a class="one" href="javascript:;">帮助中心</a>
+						<i class="iconfont">></i>
+					</div>
+					<div class="help_content" style="display: none;">
+						<div>
+							<div class="help_box" onclick="window.location.href = 'help_zhoushou.html'">
+								<a href="help_zhoushou.html">风暴装机助手</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="help_box" onclick="window.location.href = 'help_hezi.html'">
+								<a href="help_hezi.html">风暴装机盒子</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div>
+							<div class="help_box" onclick="window.location.href = 'help_tuiguang.html'">
+								<a href="help_tuiguang.html">风暴在线推广</a>
+								<i class="iconfont">></i>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="choose">
+					<div class="onebox" onclick="window.location.href = 'about.html'">
+						<a class="one" href="about.html">关于风暴</a>
+						<i class="iconfont">></i>
+					</div>
+
+				</div>
+			</div>
+
+			<div id="h_login" class="h_login" style="display: none;">
+				<div class="loginImg_box">
+					<img src="img/code_fengbao.jpg" />
+				</div>
+				<div class="text">
+					<p>扫描二维码或搜索微信公众号：风暴手机联盟</p>
+					<p>关注即可加入，开始装机赚钱！</p>
+				</div>
+			</div>
+
+		</header>
+	</body>
+	<!--导航-->
+	<script type="text/javascript">
+		var Nav = $('#Nav');
+		var icon_show = $('#Nav .show');
+		var icon_close = $('#Nav .close');
+		var icon_home = $('#Nav .home');
+		var total = $('#total');
+		var choose = $('.choose');
+		var money = $('#money .onebox');
+		var money_con = $('.money_content');
+		var news = $('#news .onebox');
+		var news_con = $('.news_content');
+		var help = $('#help .onebox');
+		var help_con = $('.help_content');
+		var help_two = $('#help .twobox');
+		var help_sub = $('#help .help_sub');
+		var login = $('#total .nav .login');
+		var login_con = $('#h_login');
+
+		help_two.attr('data-content', '>');
+		//右上角点击事件
+		Nav.click(function() {
+			//			debugger;
+			if(total.css('display') == 'block') {
+				total.hide();
+				icon_close.hide();
+				icon_home.hide();
+				icon_show.show();
+
+			} else {
+				total.show();
+				icon_show.hide();
+				icon_home.hide();
+				icon_close.show();
+			}
+		})
+
+		//点击导航改变active属性
+		choose.click(function() {
+			$(this).siblings().children('.onebox').children('.one').removeClass('active');
+			$(this).children('.onebox').children('.one').addClass('active')
+		})
+
+		//打开关闭如何赚钱
+		money.click(function() {
+				if(money_con.css('display') == 'block') {
+					money_con.hide();
+					$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+				} else {
+					money_con.show();
+					$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+
+				}
+			})
+			//打开关闭风暴新闻
+		news.click(function() {
+			if(news_con.css('display') == 'block') {
+				news_con.hide();
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				news_con.show();
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+
+			}
+		})
+
+		//帮助中心
+		help.click(function() {
+			if(help_con.css('display') == 'block') {
+				help_con.hide();
+				$(this).siblings('.iconfont').css('transform', 'rotate(360deg)');
+			} else {
+				help_con.show();
+				$(this).siblings('.iconfont').css('transform', 'rotate(90deg)');
+			}
+		})
+
+		//登录注册
+		login.click(function() {
+			icon_close.hide();
+			icon_show.hide();
+			icon_home.show();
+			login_con.show();
+			icon_home.click(function() {
+				icon_close.hide();
+				icon_home.hide();
+				icon_show.show();
+				login_con.hide();
+				total.show();
+			})
+		})
+	</script>
+
+</html>
